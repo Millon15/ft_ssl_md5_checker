@@ -10,9 +10,9 @@ fi
 RED='\e[0;31m'
 
 make -C $(dirname ft_ssl_md5)
-for l in {1..5}; do
+for l in {1..10}; do
 	FILENAME=.file_$l
-	chars_amm=$(($RANDOM%500))
+	chars_amm=$(($RANDOM%5000))
 
 	echo > $FILENAME
 	for (( i = 1; i <= $chars_amm; i++ )); do
